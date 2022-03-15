@@ -30,6 +30,10 @@
         <div>
             <input class="form-control w-100 mt-1" name="sukuwat" required>
         </div>
+        <p class="mt-3">ランジ</p>
+        <div>
+            <input class="form-control w-100 mt-1" name="lunge" required>
+        </div>
         <input type="submit" class="mt-4 btn btn-primary" value="送信">
     </form>
 
@@ -76,7 +80,8 @@
                 const fukkin  = $('input[name="fukkin"]').val();
                 const haikin  = $('input[name="haikin"]').val();
                 const sukuwat = $('input[name="sukuwat"]').val();
-                const msg = `${name}\n${udetate}\n${fukkin}\n${haikin}\n${sukuwat}`;
+                const lunge = $('input[name="lunge"]').val();
+                const msg = `${name}\n${udetate}\n${fukkin}\n${haikin}\n${sukuwat}\n${lunge}`;
                 sendText(msg);
                 return false;
             });
